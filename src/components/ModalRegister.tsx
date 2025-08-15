@@ -235,21 +235,20 @@ export default function ModalRegister() {
               {/* Render below element conditionally when user get 20% discount */}
             </div>
           </div>
-          <div className="modal-footer">
+          <div className="modal-footer d-flex flex-column align-items-center gap-2">
             {/* Terms and conditions */}
-            <input 
-              className="me-2 form-check-input" 
-              type="checkbox" 
-              onChange={cdAgree}
-              checked={agree}
-              />I agree to the terms and conditions
             <div>
-              <input className="me-2 form-check-input" type="checkbox" />I agree
-              to the terms and conditions
+              <input 
+                className="mx-2 form-check-input" 
+                type="checkbox" 
+                onChange={cdAgree}
+                checked={agree}
+              />
+              I agree to the terms and conditions
             </div>
             {/* Register Button */}
             <button
-              className="btn btn-success my-2"
+              className="btn btn-success w-100"
               onClick={registerBtnOnClick}
               disabled={!agree}
               //You can embbed a state like below to disabled the button
